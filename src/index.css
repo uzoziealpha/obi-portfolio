@@ -1,0 +1,69 @@
+/* src/index.css */
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html, body, #root { height: 100%; }
+  html { scroll-behavior: smooth; }
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}
+
+  body {
+    @apply antialiased text-slate-900 dark:text-slate-50;
+
+    /* light bg */
+    background-color: #f6f7fb;
+    background-image:
+      radial-gradient(1200px 700px at 18% 10%, rgba(0,0,0,0.06), transparent 60%),
+      radial-gradient(900px 520px at 82% 28%, rgba(79,70,229,0.12), transparent 55%),
+      radial-gradient(700px 520px at 60% 82%, rgba(236,72,153,0.10), transparent 60%);
+    background-attachment: fixed;
+  }
+
+  .dark body {
+    background-color: #050816;
+    background-image:
+      radial-gradient(1200px 700px at 18% 10%, rgba(255,255,255,0.07), transparent 60%),
+      radial-gradient(900px 520px at 82% 28%, rgba(99,102,241,0.22), transparent 55%),
+      radial-gradient(700px 520px at 60% 82%, rgba(236,72,153,0.18), transparent 60%);
+  }
+}
+
+/* ---------------------------
+   3D hover tilt (no layout)
+---------------------------- */
+@layer utilities {
+  .card-3d {
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform 220ms ease, box-shadow 220ms ease, background-color 220ms ease;
+  }
+
+  .card-3d:hover {
+    transform: translateY(-6px) perspective(900px) rotateX(5deg) rotateY(-6deg);
+    box-shadow:
+      0 22px 50px rgba(0,0,0,0.16),
+      0 0 0 1px rgba(0,0,0,0.06) inset;
+  }
+
+  .dark .card-3d:hover {
+    box-shadow:
+      0 22px 60px rgba(0,0,0,0.55),
+      0 0 0 1px rgba(255,255,255,0.10) inset;
+  }
+
+  /* Optional: make inner content “pop” slightly */
+  .card-3d > .card-3d-pop {
+    transform: translateZ(18px);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .card-3d, .card-3d:hover {
+      transition: none;
+      transform: none;
+    }
+  }
+}
