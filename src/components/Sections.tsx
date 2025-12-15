@@ -1,5 +1,5 @@
 // src/components/Sections.tsx
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import calmImg from "../assets/projects/calm.jpg";
 import vsImg from "../assets/projects/vs.jpg";
 import tabImg from "../assets/projects/tableau.jpg";
