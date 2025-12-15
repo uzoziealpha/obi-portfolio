@@ -5,6 +5,8 @@ import metamaskIcon from "../assets/metamask.png";
 import powerBIIcon from "../assets/powerbi.png";
 import tableauIcon from "../assets/tableau.png";
 import adobeCCIcon from "../assets/adobecc.png";
+import klingIcon from "../assets/kling.png";
+import chatgptIcon from "../assets/chatgpt.png";
 
 type Skill = {
   name: string;
@@ -27,7 +29,8 @@ const SKILLS: Skill[] = [
   { name: "Tableau", localIcon: tableauIcon },
   { name: "Adobe CC", localIcon: adobeCCIcon },
   { name: "MetaMask", localIcon: metamaskIcon },
-
+  { name: "Kling", localIcon: klingIcon },
+  { name: "ChatGPT", localIcon: chatgptIcon },
 
   { name: "Ethereum", icon: "ethereum" },
   { name: "Solidity", icon: "solidity" },

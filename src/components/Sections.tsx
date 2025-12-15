@@ -2,7 +2,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import calmImg from "../assets/projects/calm.jpg";
 import vsImg from "../assets/projects/vs.jpg";
-
+import tabImg from "../assets/projects/tableau.jpg";
 /** -------------------------------------------------------
  *  1) DATA
  *  ----------------------------------------------------- */
@@ -31,12 +31,12 @@ const PROJECTS: Project[] = [
     image: vsImg,
   },
   {
-    title: "Power BI — Business Dashboards",
-    desc: "Sales & operations dashboards: KPIs, forecasting, and executive reporting.",
-    tags: ["Power BI", "Analytics", "Reporting"],
-    link: "https://YOUR-POWERBI-LINK-HERE",
-    image: null,
-  },
+  title: "Tableau — HKMA Liquidity Monitor (Aggregate Balance)",
+  desc: "Executive-ready dashboard built from HKMA Daily Monetary Statistics: Aggregate Balance level vs 20D MA, 1D liquidity change, and a 20D Z-score stress signal with latest-day KPI cards.",
+  tags: ["Tableau", "FinTech", "Time Series", "KPIs", "Banking Analytics"],
+  link: "https://public.tableau.com/app/profile/obinna.uzozie8626/viz/HKMALiquidityMonitorAggregateBalance/HKMALiquidityMonitorAggregateBalance?publish=yes",
+  image: tabImg,
+},
 ];
 
 const CONTACT = {
