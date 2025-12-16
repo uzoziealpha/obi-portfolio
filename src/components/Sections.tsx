@@ -84,11 +84,11 @@ const VIDEOS: VideoItem[] = [
     fullUrl: "https://www.instagram.com/reel/DRTyk3lkRUw/?igsh=MTBjNGFhcHRsdnV6dg%3D%3D",
   },
   {
-    title: "Brand Montage",
-    subtitle: "Highlights • best shots",
+    title: "Seasonal Promotional Ads",
+    subtitle: "Storytelling • Seasonal themes",
     previewMp4: "/videos/previews/v6.mp4",
     poster: "/videos/posters/v6.jpg",
-    fullUrl: "https://YOUR-LINK-HERE",
+    fullUrl: "https://www.instagram.com/reel/DSSqiurE-B6/?igsh=ZGF4aTc1dXF1bHRk",
   },
 ];
 
