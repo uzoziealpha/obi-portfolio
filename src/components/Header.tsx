@@ -42,7 +42,7 @@ export default function Header() {
   }
 
   return (
-    <header className="sticky top-0 z-50">
+    <header className="sticky top-0 z-[999] isolation-isolate">
       <div className="mx-auto max-w-6xl px-4 py-3">
         <div
           className={[
