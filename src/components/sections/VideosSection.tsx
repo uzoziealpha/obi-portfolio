@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { VIDEOS } from "../data/videos";
-import VideoPosterWall from "../cards/VIdeoPosterWall";
+import VideoPosterWall from "../cards/VideoPosterWall";
 
 export default function VideosSection() {
   const videos = useMemo(() => VIDEOS.slice(0, 6), []);
