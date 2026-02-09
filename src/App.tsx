@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Sections from "./components/sections/Sections";
@@ -11,6 +12,7 @@ export default function App() {
         <Hero />
         <Sections />
       </main>
+      <Analytics />
     </div>
   );
 }
